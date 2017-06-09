@@ -1,0 +1,21 @@
+﻿@model Fyzika.Models.PyramidyManager
+@Styles.Render("~/Content/Pyramidka.css")
+
+@{
+    ViewBag.Title = "Vzorce";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+@foreach (var item in Model.pyramidyList)
+{
+    <div class="trojuhelnik">
+    <div class="pyramida">@item.Nadpis</div>
+    <div>@item.Podnadpis</div>
+    <div>@item.Id</div>
+    <div>@item.Poznamka</div>
+    <div>@item.V1</div>
+        </div>
+}
