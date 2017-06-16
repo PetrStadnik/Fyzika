@@ -7,14 +7,14 @@ namespace Fyzika.Models
 {
     public class Pyramidka
     {
+        public string V1 { get; set; }
+        public string V2 { get; set; }
+        public string V3 { get; set; }
+
         public int Id { get; set; }
         public string Nadpis { get; set; }
         public string Podnadpis { get; set; }
         public string Poznamka { get; set; }
-
-        public string V1 { get; set; }
-        public string V2 { get; set; }
-        public string V3 { get; set; }
 
         public string J1 { get; set; }
         public string J2 { get; set; }

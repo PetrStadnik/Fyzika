@@ -1,9 +1,18 @@
-﻿@{
+﻿@model Fyzika.Models.Databaze
+@{
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
+
+@foreach (var item in Model.Jmena)
+{
+    
+        <h1>@item</h1>
+      
+   
+}
 <address>
     One Microsoft Way<br />
     Redmond, WA 98052-6399<br />

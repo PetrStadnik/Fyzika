@@ -26,9 +26,14 @@ namespace Fyzika.Controllers
 
         public ActionResult Contact()
         {
+
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            Databaze databaze = new Databaze();
+            databaze.Main();
+            
+
+            return View(databaze);
         }
     }
 }
