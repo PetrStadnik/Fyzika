@@ -20,7 +20,7 @@ namespace Fyzika.Models
 
         public void Main()
         {
-            string connStr = "server=81.2.194.248;user=f91809;database=f91809;port=3306;password=SEB673p24;";
+            string connStr = "server=81.2.194.248;user=f91809;database=f91809;port=3306;password=*********;";
             MySqlConnection conn = new MySqlConnection(connStr);
             try
             {
