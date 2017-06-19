@@ -20,7 +20,7 @@ namespace Fyzika.Models
 
         public List<Pyramidka> VratList()
         {
-           pyramidyList = new List<Pyramidka>(pyramidyList.OrderBy(Pyramidka => Pyramidka.Nadpis));
+          // pyramidyList = new List<Pyramidka>(pyramidyList.OrderBy(Pyramidka => Pyramidka.Nadpis));
             return pyramidyList;
         }
 

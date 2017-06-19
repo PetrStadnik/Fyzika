@@ -1,14 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – Moje aplikace ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+
+    
 </head>
 <body>
+    <h2>Vlozeni</h2>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -22,23 +27,24 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Domů", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Pyramidky", "Pyramidky", "Home")</li>
-                    <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Vložit pyramidu", "Pyramida", "Vkladani")</li>
+                    <li>@Html.ActionLink("Vložit veličinu", "Velicina", "Vkladani")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year Projekt Fyzika, vytvořil Petr Stádník</p>
-            @Html.ActionLink("Upravit","Velicina","Vkladani")
-        </footer>
-    </div>
 
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+
+
+
+
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
+    </body>
 </html>

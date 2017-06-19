@@ -11,7 +11,13 @@ namespace Fyzika.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            VelicinyManager velicinyManager = new VelicinyManager();
+
+
+
+           
+            ViewBag.stav = velicinyManager.VratVelicinyList(velicinyManager);
+            return View(velicinyManager);
         }
 
         public ActionResult Pyramidky()
